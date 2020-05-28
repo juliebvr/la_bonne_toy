@@ -13,14 +13,13 @@
   </head>
 
   <body>
+
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flashes' %>
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-
-  </div>
-</div>
-<%= render "layouts/footer.html.erb" %>
-<%= debug(params) if Rails.env.development? %>
+    <%= render "shared/footer" %>
 
   </body>
 </html>
