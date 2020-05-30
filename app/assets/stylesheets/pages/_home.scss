@@ -7,7 +7,7 @@ body {
 }
 
 .content-container {
-  display: flex;
+  background: #ba7030;
 }
 
 .cards {
@@ -15,8 +15,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  background: #ba7030;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 
@@ -83,10 +83,21 @@ body {
 }
 
 .lien_ajouter_annonce {
+  display: flex;
+  justify-content: center;
+  width: 16%;
   font-family: arial;
   font-size: 12px;
   text-align: center;
   text-decoration: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  background: #784449;
+  transition: background 0.3s ease;
 }
 
+.lien_ajouter_annonce:hover {
+  background: #ba676e;
+  color: white;
+}
 
