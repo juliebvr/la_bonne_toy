@@ -4,6 +4,7 @@ class ToysController < ActionController::Base
   end
 
   def show
+    @toy = Toy.find(params[:id])
   end
 
   def new
@@ -27,5 +28,4 @@ class ToysController < ActionController::Base
   def toy_params
     params.require(:toy).permit(:title, :description, :price, :img_url)
   end
-
 end
