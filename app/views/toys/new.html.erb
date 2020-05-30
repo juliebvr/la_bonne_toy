@@ -1,7 +1,7 @@
 <%= simple_form_for(@toy) do |f| %>
-  <%= f.input :title %>
+  <%= f.input :title, label: "Titre" %>
   <%= f.input :description %>
-  <%= f.input :price %>
-  <%= f.input :img_url %>
-  <%= f.submit %>
+  <%= f.input :price, label: "Prix à la journée" %>
+  <%= f.input :img_url, label: "Image" %>
+  <%= f.submit class: "btn-gradient" %>
 <% end %>
