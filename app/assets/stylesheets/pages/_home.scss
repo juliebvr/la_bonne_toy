@@ -15,31 +15,26 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   overflow: hidden;
-  background: white;
+  background: #ba7030;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 
 
 .card {
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  border-radius: 1px;
+  overflow: hidden;
+  height: 200px;
   margin: 15px 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  display: center;
-  align-items: center;
   justify-content: space-around;
-  color: black;
-  font-weight: bolder;
+  border-radius: 14px;
 }
 
 
 .card img {
   height: 70%;
   width: auto;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 
@@ -70,11 +65,22 @@ body {
   position: absolute;
   right: 16px;
   top: -20px;
-  width: 40px;
-  border-radius: 50%;
 }
 
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(#982b34, #ba676e);
+  transition: background 0.3s ease;
+  border: 1px solid #ba676e;
+}
 
+.btn-gradient:hover {
+  background: linear-gradient(#784449, #2f0d11);
+  color: white;
+}
 
 .lien_ajouter_annonce {
   font-family: arial;
@@ -82,3 +88,5 @@ body {
   text-align: center;
   text-decoration: none;
 }
+
+
