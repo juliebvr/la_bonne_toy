@@ -1,0 +1,105 @@
+// Import page-specific CSS files here.
+
+// Specific CSS for your home-page
+body {
+    margin: 0;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+    background: #F4F4F4;
+}
+
+.content-container {
+  background: #ba7030;
+}
+
+.cards {
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+
+.card {
+  overflow: hidden;
+  height: 200px;
+  margin: 15px 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  justify-content: space-around;
+  border-radius: 14px;
+}
+
+
+.card img {
+  height: 70%;
+  width: auto;
+  object-fit: contain;
+}
+
+
+.card h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+
+}
+
+.card p {
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: .7;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+
+.card .card-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-infos .card-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+}
+
+.btn-gradient {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 10px;
+  font-weight: bold;
+  background: linear-gradient(#982b34, #ba676e);
+  transition: background 0.3s ease;
+  border: 1px solid #ba676e;
+}
+
+.btn-gradient:hover {
+  background: linear-gradient(#784449, #2f0d11);
+  color: white;
+}
+
+.lien_ajouter_annonce {
+  display: flex;
+  justify-content: center;
+  width: 16%;
+  font-family: arial;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  background: #784449;
+  transition: background 0.3s ease;
+}
+
+.lien_ajouter_annonce:hover {
+  background: #ba676e;
+  color: white;
+}
+
