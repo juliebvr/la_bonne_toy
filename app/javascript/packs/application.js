@@ -30,5 +30,5 @@ import "bootstrap";
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-  // initSelect2();
+  $('#legal_age').modal({backdrop:'static',keyboard:false, show:true});
 });
