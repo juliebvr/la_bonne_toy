@@ -3,9 +3,9 @@
   <%= video_tag "video.mp4", autoplay: true, loop: true, muted: true, type: "video/mp4", class: "video" %>
 </div>
 <!-- Modal -->
-<div class="modal" id="legal_age" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content d-flex justify-content-center align-items-center p-5">
+<div class="modal rounded-circle" id="legal_age" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog rounded-circle" role="document">
+    <div class="modal-content d-flex justify-content-center align-items-center p-5 rounded-lg bg-light", style="opacity: 0.6">
       <h5 class="p-3"> Bienvenue sur </h5>
        <%= image_tag "la_bonne_toy.svg", class: "logo_homepage" %>
       <div class="modal-body d-flex justify-content-center">
@@ -18,5 +18,3 @@
     </div>
   </div>
 </div>
-
-
