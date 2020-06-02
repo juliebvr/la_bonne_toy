@@ -19,12 +19,12 @@
 
   <body>
 
-    <%= render 'shared/navbar' %>
+    <%= render 'shared/navbar' unless controller_name == "pages" && action_name == "home"%>
     <%= render 'shared/flashes' %>
     <%= yield %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-    <%= render "shared/footer" %>
+    <%= render "shared/footer" unless controller_name == "pages" && action_name == "home"%>
 
 
   </body>
