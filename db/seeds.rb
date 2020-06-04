@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Toy.destroy_all
+
+Toy.create(
+  title: "king kong",
+  description: "mortel !!!",
+  price: 0.12e2,
+  img_url: ""
+)
+
+Toy.create(
+title: "sqefazf",
+  description: "fazef",
+  price: 0.12e2,
+  img_url: ""
+)
+
+puts Toy.count
