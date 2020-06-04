@@ -51,7 +51,6 @@ body {
   height: 70%;
   width: auto;
   object-fit: contain;
-
 }
 
 
@@ -59,7 +58,6 @@ body {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
-
 }
 
 .card p {
@@ -98,23 +96,3 @@ body {
   background: linear-gradient(#784449, #2f0d11);
   color: white;
 }
-
-.lien_ajouter_annonce {
-  display: flex;
-  justify-content: center;
-  width: 16%;
-  font-family: arial;
-  font-size: 12px;
-  text-align: center;
-  text-decoration: none;
-  padding: 8px 8px;
-  border-radius: 4px;
-  background: #784449;
-  transition: background 0.3s ease;
-}
-
-.lien_ajouter_annonce:hover {
-  background: #ba676e;
-  color: white;
-}
-
