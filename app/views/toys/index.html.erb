@@ -5,10 +5,8 @@
   </div>
 
   <div class="container-cards">
-
+    <% @toys.each do |element| %>
+      <%= render "shared/card_toy", toy: element %>
+    <% end %>
   </div>
 </div>
-
-
-
-

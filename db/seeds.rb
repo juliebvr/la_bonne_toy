@@ -10,14 +10,62 @@ Toy.destroy_all
 Toy.create(
   title: "king kong",
   description: "mortel !!!",
-  price: 0.12e2,
+  price: 12,
   img_url: ""
 )
 
 Toy.create(
 title: "sqefazf",
   description: "fazef",
-  price: 0.12e2,
+  price: 12,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
+  img_url: ""
+)
+Toy.create(
+  title: "=mqkD+MKQ",
+  description: ",Q+ML,M",
+  price: 11,
   img_url: ""
 )
 
