@@ -3,7 +3,6 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-  # has_many :toys
-  # has_many :transactions
-  # has_one_attached :avatar
+  has_many :toys, dependent: :destroy
+  has_many :transactions, foreign_key: "customer_id"
 end

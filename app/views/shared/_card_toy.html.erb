@@ -11,10 +11,11 @@
         <%= "#{toy.price} € / le week-end" %>
       </div>
       <div class="description">
-      <%= toy.description %>
+        <%= toy.description %>
       </div>
-
     </div>
   <% end %>
-  <button class="btn-gradient">Jouez avec moi</button>
+  <%= link_to toy_path(toy) do %>
+    <button class="btn-gradient">Jouez avec moi</button>
+  <% end %>
 </div>

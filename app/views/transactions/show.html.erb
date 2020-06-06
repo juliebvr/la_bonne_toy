@@ -1,0 +1,23 @@
+ <h1><%= @transaction.toy.name %></h1>
+  <h2><%= @transaction.toy.user %></h2>
+
+<%= render 'shared/carousel', toy: @transaction.toy %>
+
+<div class="container-text my-4">
+  <div class="container-infos">
+  <p><%= "début de location : #{@transaction.date_start}" %></p>
+  <p><%= "fin de location : #{@transaction.date_end}" %></p>
+  <p><%= "montant de la location : #{@montant} €" %></p>
+
+</div>
+
+<div class= "d-inline-flex">
+<%= button_to "retour aux réservations", transactions_path, method: :get, class: "btn btn-ghost" %>
+
+<%= button_to 'modifier', edit_transaction_path(@transaction), method: :get,class: "btn btn-ghost"%>
+
+<%= button_to 'annuler la réservation', transaction_path(@transaction),
+        method: :delete,
+        data: { confirm: "Voulez-vous annuler la réservation de :#{@transaction.toy.name}?" },
+        class: "btn btn-ghost" %>
+</div>

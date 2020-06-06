@@ -1,0 +1,5 @@
+
+<h2>toy : <%= @toy.title %></h2>
+  <%= render "form", transaction: @transaction, toy: @toy %>
+<br>
+<%= link_to "retour", toy_path(@toy), class: "btn btn-ghost" %>
