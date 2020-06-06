@@ -11,13 +11,17 @@
     </div> -->
 
     <!-- <div class="search-caja"> -->
-      <%= form_tag toys_path, method: :get, class: "search-caja" do %>
+      <%= form_tag toys_path, method: :get, class: "search" do %>
         <%= text_field_tag :query,
           params[:query],
-          class: "search-text",
-          placeholder: "search..."
+          class: "searchTerm",
+          placeholder: "Chercher un jouet"
+
         %>
-        <%= submit_tag "Search", class: "search-btn" %>
+
+         <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
       <% end %>
     <!-- </div> -->
 
