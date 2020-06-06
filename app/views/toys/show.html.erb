@@ -1,1 +1,18 @@
-<h1>Work in Progress</h1>
+
+<div class="container_cards_show">
+  <div class="bloc_cards_show">
+    <div class="card-title_show">
+      <%= @toy.title %>
+    </div>
+    <div class="card-picture_show">
+      <%= image_tag @toy.img_url, alt: "alttext" %>
+    </div>
+    <div class="description_show">
+      <%= @toy.description %>
+    </div>
+    <div>
+      <%= "#{@toy.price} € / le week-end" %>
+    </div>
+    <button class="btn-gradient">Réservez moi !</button>
+  </div>
+</div>
