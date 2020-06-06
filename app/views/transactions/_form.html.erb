@@ -1,0 +1,6 @@
+<div class="form-container">
+  <%= simple_form_for([@toy, @transaction]) do |f| %>
+    <%= f.input :duration %>
+    <%= f.submit "Réserver", class: "btn btn-gradient" %>
+  <% end %>
+</div>
