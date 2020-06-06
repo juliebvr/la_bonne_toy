@@ -46,25 +46,25 @@ Toy.create(
 )
 Toy.create(
   title: "Irresistible - Vibromasseur Desirable",
-  description: ",Q+ML,M",
+  description: "Le modèle Desirable est équipé d'un moteur F1 extrêmement puissant de dernière génération et dispose de 10 modes de vibration ainsi que d’une extrémité flexible munie d’un moteur. Il convient à toutes les femmes, et sa forme lui permet d’atteindre parfaitement le point G",
   price: 9,
   img_url: "sextoy16.jpg"
 )
 Toy.create(
-  title: "=mqkD+MKQ",
-  description: ",Q+ML,M",
+  title: "Vibromasseur Thin Vibe",
+  description: "Ce vibromasseur est idéal pour tous les endroits sensibles. Il est facile à porter et vous pouvez même utiliser le vibromasseur dans la douche car il est étanche.",
   price: 11,
   img_url: "sextoy17.jpg"
 )
 Toy.create(
-  title: "=mqkD+MKQ",
-  description: ",Q+ML,M",
+  title: "Vibromasseur avec peau réaliste",
+  description: "Le matériau Cyberskin utilisé pour fabriquer ce vibromasseur est très réaliste et vous fournira un plaisir considérable. Sa texture particulièrement douce permet à ce vibromasseur de procurer les mêmes sensation qu’un vrai pénis.",
   price: 11,
   img_url: "sextoy18.jpg"
 )
 Toy.create(
-  title: "=mqkD+MKQ",
-  description: ",Q+ML,M",
+  title: "Vibromasseur Jewel vibrator",
+  description: "Le vibromasseur point G DISCRETION est silencieux. Il marche à moins de 50 dB tout en assurant un puissant punch orgasmique lorsque nécessaire. Il s'agit d'un moteur F1 de nouvelle génération, avec 10 modes différents au choix",
   price: 11,
   img_url: "sextoy18.jpg"
 )

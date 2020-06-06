@@ -11,10 +11,19 @@
   flex-direction: column;
 
 
+
+  .card_toy_link{
+    // display: flex;
+    // flex-direction: column;
+     a{
+    text-decoration: none;
+  }
+  }
   .card-picture img {
     height: 70%;
     width: auto;
     object-fit: contain;
+    align-items: center;
   }
   .card-title {
     font-family: arial;
@@ -22,6 +31,8 @@
     font-weight: bold;
     margin: 6px;
     text-align: center;
+    padding: 6px;
+    text-decoration: none;
   }
   .description {
     font-family: arial;
