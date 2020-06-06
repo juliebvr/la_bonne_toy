@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 2020_06_06_121907) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "toy_id"
     t.bigint "customer_id"
-    t.index ["customer_id"], name: "index_transactions_on_customer_id", unique: true
+    t.index ["customer_id"], name: "index_transactions_on_customer_id"
     t.index ["toy_id"], name: "index_transactions_on_toy_id"
   end
 
