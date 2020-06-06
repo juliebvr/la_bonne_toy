@@ -5,12 +5,31 @@
       <h4 class="animation a2">Utilise ton email et ton mot de passe pour te connecter</h4>
     </div>
     <div class="form">
-      <input type="email" class="form-field animation a3" placeholder="Adresse Email">
-      <input type="password" class="form-field animation a4" placeholder="Mot de passe">
-      <p class="animation a5"><a href="#">Forgot Password</a></p>
-      <button class="animation a6">SE CONNECTER</button>
-      <button class="animation a6">CREER UN COMPTE</button>
-    </div>
+
+
+    <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name), class: "form") do |f| %>
+        <%= f.input :email,
+                    placeholder:'Adresse Email',
+                    required: false,
+                    autofocus: true,
+                    label: false,
+                    input_html: { autocomplete: "email", class: "form-field animation a3"}%>
+        <%= f.input :password,placeholder:'Mot de passe',
+                    required: false,
+                    label: false,
+                    input_html: { autocomplete: "current-password", class: "form-field animation a4"} %>
+
+      <div class="form-actions">
+        <%= f.button :submit, "SE CONNECTER", class: "submit-btn animation a6" %>
+      </div>
+    <% end %>
+</div>
+<%= render "devise/shared/links" %>
+
+
+
   </div>
   <div class="right"></div>
 </div>
+
+
