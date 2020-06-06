@@ -1,5 +1,7 @@
 .card-toy {
   padding: 10px;
+
+
   margin: 10px;
   overflow: hidden;
   height: auto;
@@ -13,18 +15,23 @@
 
 
   .card_toy_link{
+    text-decoration: none;
     // display: flex;
     // flex-direction: column;
      a{
-    text-decoration: none;
-  }
-  }
-  .card-picture img {
-    height: 70%;
-    width: auto;
+
+    }
+    text-align: center;
+      img {
+    height: 40%;
+    width: 40%;
     object-fit: contain;
+    align-items: right;
+    text-align: center;
     align-items: center;
+    }
   }
+
   .card-title {
     font-family: arial;
     font-size: 18px;
@@ -33,16 +40,27 @@
     text-align: center;
     padding: 6px;
     text-decoration: none;
+    color: black;
   }
   .description {
-    font-family: arial;
-    font-size: 8px;
+    font-family: italic;
+    font-size: 13px;
     text-align: center;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .price {
+    font-family: PT Sans;
+    font-size: 24px;
+    text-align: center;
+    color: #D0006F;
+
+
   }
 }
 
 .card-toy:hover {
-  background: linear-gradient(white, #2f0d11);
+  background: linear-gradient(white, #D0006F);
   color: white;
     transition: box-shadow .3s ease-in-out;
       transition-property: box-shadow;
@@ -53,12 +71,12 @@
 
 .btn-gradient {
   color: white;
-  padding: 8px 24px;
-  border-radius: 10px;
+  padding: 12px 24px;
+  border-radius: 18px;
   font-weight: bold;
-  background: linear-gradient(#982b34, #ba676e);
+  background: linear-gradient(#982b34, #D0006F);
   transition: background 0.3s ease;
-  border: 1px solid #ba676e;
+  border: 1px solid white;
 }
 
 .btn-gradient:hover {
@@ -99,10 +117,16 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  color: #D0006F;
 }
 
 .card-infos .card-user {
   position: absolute;
   right: 16px;
   top: -20px;
+  color: black;
+}
+
+.card-picture {
+  align-items: center;
 }

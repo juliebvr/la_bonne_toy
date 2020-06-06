@@ -7,12 +7,13 @@
       <div class="card-title">
         <%= toy.title %>
       </div>
+      <div class="price">
+        <%= "#{toy.price} € / le week-end" %>
+      </div>
       <div class="description">
       <%= toy.description %>
       </div>
-      <div>
-        <%= "#{toy.price} € / le week-end" %>
-      </div>
+
     </div>
   <% end %>
   <button class="btn-gradient">Jouez avec moi</button>
