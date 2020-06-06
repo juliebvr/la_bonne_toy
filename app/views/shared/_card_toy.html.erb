@@ -1,19 +1,19 @@
 <div class="card-toy" data-aos="fade-up-right">
   <%= link_to toy_path(toy) do %>
-  <div class="card_toy_link">
-    <div class="card-picture">
-      <%= image_tag toy.img_url, alt: "alttext" %>
+    <div class="card_toy_link">
+      <div class="card-picture">
+        <%= image_tag toy.img_url, alt: "alttext" %>
+      </div>
+      <div class="card-title">
+        <%= toy.title %>
+      </div>
+      <div class="price">
+        <%= "#{toy.price} € / le week-end" %>
+      </div>
+      <div class="description">
+        <%= toy.description %>
+      </div>
     </div>
-    <div class="card-title">
-      <%= toy.title %>
-    </div>
-    <div class="description">
-      <%= toy.description %>
-    </div>
-    <div>
-      <%= "#{toy.price} € / le week-end" %>
-    </div>
-  </div>
   <% end %>
   <%= link_to toy_path(toy) do %>
     <button class="btn-gradient">Jouez avec moi</button>
