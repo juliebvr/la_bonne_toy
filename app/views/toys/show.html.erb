@@ -13,6 +13,6 @@
     <div>
       <%= "#{@toy.price} € / le week-end" %>
     </div>
-    <button class="btn-gradient">Réservez moi !</button>
+    <%= link_to "Reservez-moi", new_toy_transaction_path(@toy), class: "btn-gradient" %>
   </div>
 </div>
