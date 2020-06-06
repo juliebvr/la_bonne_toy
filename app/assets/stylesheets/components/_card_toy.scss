@@ -1,15 +1,15 @@
 .card-toy {
-  border: 2px solid red;
   padding: 10px;
   margin: 10px;
   overflow: hidden;
   height: auto;
   margin: 15px 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 16px rgba(0,0,0,0.1);
   border-radius: 14px;
   align-items: center;
   display: flex;
   flex-direction: column;
+
 
   .card-picture img {
     height: 70%;
@@ -17,15 +17,27 @@
     object-fit: contain;
   }
   .card-title {
-    font-size: 16px;
+    font-family: arial;
+    font-size: 18px;
     font-weight: bold;
-    margin: 0;
+    margin: 6px;
+    text-align: center;
+  }
+  .description {
+    font-family: arial;
+    font-size: 8px;
+    text-align: center;
   }
 }
 
 .card-toy:hover {
-  background: linear-gradient(#784449, #2f0d11);
+  background: linear-gradient(white, #2f0d11);
   color: white;
+    transition: box-shadow .3s ease-in-out;
+      transition-property: box-shadow;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0s;
 }
 
 .btn-gradient {
@@ -42,7 +54,6 @@
   background: linear-gradient(#784449, #2f0d11);
   color: white;
 }
-
 
 
 .card-category {
