@@ -1,6 +1,10 @@
 class ToysController < ApplicationController
  def index
-    @toys = Toy.all
+    if params.key?(:query)
+      @toys = Toy.all.select{ |toy| toy.title.include?( params[:query]) }
+    else
+      @toys = Toy.all
+    end
   end
 
   def show

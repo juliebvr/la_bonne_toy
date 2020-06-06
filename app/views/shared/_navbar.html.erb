@@ -2,17 +2,29 @@
   <%= link_to "#", class: "navbar-brand" do %>
     <%= image_tag "la_bonne_toy.svg", class: "logo_homepage" %>
     <% end %>
-
+<!--
     <div class="search-caja">
     <input type="text" name="" class="search-txt" placeholder="search..."/>
     <a class="search-btn">
       <i class="fas fa-search"></i>
     </a>
-    </div>
+    </div> -->
+
+    <!-- <div class="search-caja"> -->
+      <%= form_tag toys_path, method: :get, class: "search-caja" do %>
+        <%= text_field_tag :query,
+          params[:query],
+          class: "search-text",
+          placeholder: "search..."
+        %>
+        <%= submit_tag "Search", class: "search-btn" %>
+      <% end %>
+    <!-- </div> -->
 
     <div class="lien_ajouter_annonce">
       <%= link_to "Ajouter une annonce", new_toy_path %>
     </div>
+
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
